@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tradegoon</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+
+        <div class="header">
+            <h1>Tradegoon</h1>
+            <p>A simple stock checker by <a href="https://github.com/Rafisverycool">Raf</a></p>
+        </div>
+
+        <div class="layout">
+
+            <div class="sidebar">
+                <h2>Stocks</h2>
+
+                <div class="stock-group">
+                    <h3>Tech</h3>
+                    <div class="stock">Sandisk</div>
+                    <div class="stock">Apple</div>
+                    <div class="stock">Micron</div>
+                    <div class="stock">ASML</div>
+                </div>
+
+                <div class="stock-group">
+                    <h3>Commodities</h3>
+                    <div class="stock">Gold</div>
+                    <div class="stock">Silver</div>
+                    <div class="stock">Copper</div>
+                    <div class="stock">Crude Oil</div>
+                </div>
+
+                <div class="stock-group">
+                    <h3>Crypto</h3>
+                    <div class="stock">Bitcoin</div>
+                    <div class="stock">Ethereum</div>
+                    <div class="stock">Litecoin</div>
+                    <div class="stock">Solana</div>
+                    <div class="stock">Ripple</div>
+                </div>
+            </div>
+
+            <div class="main">
+
+                <div class="main-topbar">
+                    <div class="main-identity">
+                        <span class="main-name" id="main-name">—</span>
+                        <span class="main-divider">|</span>
+                        <span class="main-price" id="main-price">—</span>
+                        <span class="main-change" id="main-change"></span>
+                    </div>
+                    <div class="main-stats">
+                        <div class="stat-box" id="stat-open">
+                            <span class="stat-label">Open</span>
+                            <span class="stat-value">—</span>
+                        </div>
+                        <div class="stat-box" id="stat-high">
+                            <span class="stat-label">High</span>
+                            <span class="stat-value">—</span>
+                        </div>
+                        <div class="stat-box" id="stat-low">
+                            <span class="stat-label">Low</span>
+                            <span class="stat-value">—</span>
+                        </div>
+                        <div class="stat-box" id="stat-prevclose">
+                            <span class="stat-label">Prev Close</span>
+                            <span class="stat-value">—</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chart-panel">
+                    <div class="timeframe-bar">
+                        <button class="tf-btn" data-tf="1S">1S</button>
+                        <button class="tf-btn" data-tf="1Min">1M</button>
+                        <button class="tf-btn" data-tf="5Min">5M</button>
+                        <button class="tf-btn" data-tf="1H">1H</button>
+                        <button class="tf-btn active" data-tf="1D">1D</button>
+                        <button class="tf-btn" data-tf="1W">1W</button>
+                        <button class="tf-btn" data-tf="1Mo">1Mo</button>
+                        <button class="tf-btn" data-tf="3Mo">3Mo</button>
+                        <button class="tf-btn" data-tf="1Y">1Y</button>
+                        <button class="tf-btn" data-tf="5Y">5Y</button>
+                    </div>
+
+                    <div class="chart-area" id="chart-area">
+                        <p class="chart-placeholder">Select a stock to view chart</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script type="module" src="js/Main.js"></script>
+    </body>
+</html>
