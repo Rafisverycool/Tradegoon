@@ -1,1 +1,7 @@
 export const FINNHUB_KEY = 'API_KEY_HERE';
+
+export const ALPACA_KEY    = 'API_KEY_HERE';
+export const ALPACA_SECRET = 'SECRET_HERE';
+export const ALPACA_FEED = 'iex';
+
+// iex is the free version of alpaca
